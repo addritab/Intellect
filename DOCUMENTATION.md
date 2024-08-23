@@ -7,3 +7,4 @@
 -Added bounce effects. 
 -Changed button designs.
 -Fixed star issue.
+-Added more links the next day.
