@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap'); 
+
+* {
+  margin: 0;
+  padding: 0;
+  transition: 0.4s;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #ffffff;
+  font-family: 'Londrina Solid', sans-serif;
+  overflow-x: hidden;
+}
+
+.icon {
+  flex: 0 auto;
+  transform: translateX(20px);
+}
+
+.topnav {
+  position: sticky;
+  font-size: 34px;
+  display: flex;
+  top: 0;
+  background-color: #cae8e7;
+  z-index: 2;
+  justify-content: space-around;
+  align-items: center;
+  height: 55px;
+  min-height: 30px;
+  padding: 10px 0;
+}
+
+.nav img {
+  flex: 0 0 auto;
+}
+
+nav ul {
+  width: 500px;
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 160px;
+}
+
+nav li {
+  height: 50px;
+}
+
+nav a {
+  font-size: 21px;
+  text-decoration: none;
+  color: black;
+  background-color: #f6f5f2; 
+  border-radius: 20px;
+  padding: 9px 40px;
+  display: inline-block; 
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #dedede; 
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.content-wrapper {
+  position: relative;
+}
+
+.title {
+  text-align: center;
+  margin-top: 90px;
+  margin-right: 350px;
+  font-size: 100px;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  padding-left: 50px;
+  text-shadow: 5px 4px 0px rgba(0, 0, 0, 0.1); 
+}
+
+.subtitle {
+  font-family: 'Poppins', sans-serif; 
+  text-align: center;
+  margin-right: 360px;
+  font-size: 22px;
+  color: #95C4C2;
+  margin-top: 0px;
+  font-weight: normal;
+  padding-left: 50px;
+}
+
+.image-content {
+  position: absolute;
+  margin-top: -12%;
+  margin-left: 1105px;
+  width: 300px;
+}
+
+.image-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+.bottom {
+  width: 100%;
+  height: calc(100vh - 538px);
+  min-height: 538px;
+  background-color: #416D45;
+  margin-top: 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+.mission-box {
+  background-color: #F6F5F2;
+  padding: 20px;
+  border-radius: 25px;
+  width: 80%;
+  height: 290px;
+  margin: 0 auto;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  max-height: calc(100vh - 200px);
+  overflow-y: auto;
+}
+
+.mission-heading {
+  font-family: 'Londrina Solid', sans-serif;
+  margin-right: 1150px;
+  letter-spacing: 4px;
+  font-size: 45px;
+  color: #000000;
+  margin-top: 20px;
+}
+
+.mission-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  color: #735E59;
+  text-align: left;
+  margin-top: 15px;
+  margin-left: 2.3%;
+}
+
+.star-container {
+  position: absolute;
+  top: -140px;  
+  left: -165px;  
+  z-index: 1; 
+}
+
+.star-image {
+  width: 90%;  
+  height: 90%;
+}
+
+.star-container-2 {
+  position: absolute;
+  top: -100px;  
+  right: -280px;  
+  z-index: 3; 
+}
+
+.star-image-2 {
+  width: 80%;  
+  height: 80%;
+}
+
+.star-container-3 {
+  position: fixed;
+  bottom: -130px;
+  right: -250px;
+  z-index: 3; 
+}
+
+.star-image-3 {
+  width: 50%;
+  height: 50%;
+}
+
+.star-container-4 {
+  position: fixed;
+  bottom: -140px;
+  right: 950px; 
+}
+
+.star-image-4 {
+  width: 60%;
+  height: 60%;
+  transform: rotate(-105deg); 
+}
+
+.star-container-5 {
+  position: absolute;
+  top: -100px;  
+  right: -290px;  
+  z-index: 3; 
+}
+
+.star-image-5 {
+  width: 75%;  
+  height: 75%;
+}
+
+
+.star-black {
+  position: fixed;
+  bottom: 140px;
+  left: -190px; 
+  z-index: 3;
+  width: 300px; 
+  height: 300px; 
+}
+
+.star-image-black {
+  width: 130%;
+  height: 130%;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 1200px) {
+  .title, .subtitle {
+    margin-right: 0;
+    padding-left: 0;
+  }
+
+  .image-content {
+    position: static;
+    margin: 20px auto;
+    width: 300px;
+  }
+
+  nav ul {
+    width: 100%;
+    gap: 20px;
+  }
+
+  .mission-box {
+    width: 90%;
+    height: auto;
+  }
+
+  .mission-heading {
+    margin-right: 0;
+  }
+}
+
+.root {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
+}
