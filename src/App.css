@@ -1,0 +1,90 @@
+.bottom {
+  width: 100%;
+  height: calc(100vh - 538px);
+  min-height: 510px;
+  background-color: #416D45;
+  margin-top: 100px;
+  
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+}
+
+.card {
+  padding: 2em;
+  }
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+
+
+  position: relative;
+  bottom: 220px;
+}
+
+.boxStyling {
+  background-color: #f6f5f2;
+  height: 450px;
+  width: 350px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 60px;
+}
+
+.boxStyling:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.boxStyling h1 {
+  font-size: 1.8em;
+  color: #000000;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  margin-top: 10px;
+  letter-spacing: 1px;
+  padding-bottom: 10px;
+  position: relative; /* Required for positioning the line */
+}
+
+.boxStyling h1::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 48%; /* Start from the center */
+  transform: translateX(-50%); /* Center the line */
+  width: 90%; /* Adjust this percentage to control the line length */
+  height: 1px; /* Line thickness */
+  background-color: #79BBB9; /* Line color */
+}
+
+ul {
+    list-style: disc; /* Or any other value like 'circle', 'square', etc. */
+}
+
+li {
+  padding: 5px 10px;
+  vertical-align: top;
+  color: #6d5f5a;
+}
+
+li:hover {
+  display: inline-block;
+  
+  text-decoration: line-through;
+  color: red;
+}
+
+.buttonStyle button {
+  padding: 2px 4px 2px 4px;
+}
+
+.bottomHalf {
+  position: relative;
+  top: 70px;
+}
