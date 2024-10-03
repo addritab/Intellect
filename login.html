@@ -1,0 +1,117 @@
+<!-- TODO: Regex pass check -->
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Intellect - Login/Register</title>
+        <link href="login.css" rel="stylesheet" type="text/css" />
+        <link rel="icon" type="image/svg+xml" href="icon.png" />
+        <!-- <link rel="icon" href="icon.png" type="image/png" />-->
+    </head>
+
+    <body>
+        <nav>
+            <div class="topnav">
+                <img src="icon.png" width="70" height="70" class="icon" />
+                <ul id="nav">
+                    <li><a href="mission.html"> MISSION</a></li>
+                    <li><a id="checklistLink" href="#"> CHECKLIST</a></li>
+                    <li><a href="#"> RESOURCES</a></li>
+                    <li><a href="login.html"> LOGIN/REGISTER</a></li>
+                    <li><a href="#"> PROFILE</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="content-wrapper">
+            <div class="bottom"></div>
+        </div>
+        <div class="mission-box">
+            <h2 class="login-title">LOGIN FORM</h2>
+            <div class="toggle-container">
+                <input type="checkbox" id="switch" class="toggle-input" />
+                <label for="switch" class="toggle-label">
+                    <span class="toggle-text login-text">Login</span>
+                    <span class="toggle-text register-text">Register</span>
+                </label>
+            </div>
+            <div id="loginForm" class="form-container">
+                <form>
+                    <input
+                        type="text"
+                        placeholder="Email"
+                        id="logEmail"
+                        required
+                    />
+                    <input
+                        type="password"
+                        placeholder="Password"
+                        id="logPassword"
+                        required
+                    />
+                    <button type="submit" id="login">Login</button>
+                </form>
+            </div>
+            <div id="registerForm" class="form-container" style="display: none">
+                <form>
+                    <p id="incorrect"></p>
+                    <input
+                        type="text"
+                        placeholder="Username"
+                        id="username"
+                        required
+                    />
+                    <input
+                        type="email"
+                        placeholder="Email"
+                        id="email"
+                        required
+                    />
+                    <input
+                        type="password"
+                        placeholder="Password"
+                        id="password"
+                        required
+                    />
+
+                    <!-- TODO: REVIEW LINE BELOW -->
+                    <input
+                        type="password"
+                        placeholder="Confirm Password"
+                        required
+                    />
+                    <!-- -->
+
+                    <button type="submit" id="submitRegister">Register</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- star images START-->
+        <div class="star-container">
+            <img src="assets/star1.png" alt="Star" class="star-image" />
+        </div>
+        <div class="star-container-2">
+            <img src="asset/star2.png" alt="Star" class="star-image-2" />
+        </div>
+        <div class="star-container-3">
+            <img src="assets/star3.png" alt="Star" class="star-image-3" />
+        </div>
+        <div class="star-container-4">
+            <img src="assets/star4.png" alt="Star" class="star-image-4" />
+        </div>
+        <div class="star-container-5">
+            <img src="assets/star5.png" alt="Star" class="star-image-5" />
+        </div>
+        <div class="star-black">
+            <img src="assets/STAR.png" alt="Star" class="star-image-black" />
+        </div>
+        <!-- star images END-->
+        <script src="components/dynamicLogin.js"></script>
+        <!-- Firebase/Firestore AUTH -->
+        <script type="module" src="components/auth.js"></script>
+        <script src="components/dynamicPage.js"></script>
+    </body>
+</html>
