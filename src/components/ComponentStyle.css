@@ -1,0 +1,36 @@
+.buttonStyle {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 20px; 
+	margin: 20px 0; 
+}
+
+/* This is to fix the bullet points positioning */
+ul {
+	list-style-position: inside;
+}
+
+.buttonStyle button {
+	padding: 10px 20px;
+	font-family: 'Poppins', sans-serif;
+	background-color: #79BBB9; 
+	color: white;
+	letter-spacing: 1px;
+	border: none;
+	border-radius: 20px;
+	font-size: 13px;
+	cursor: pointer;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+	transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.buttonStyle button:hover {
+	background-color: #5a9d9b; 
+	transform: translateY(-2px);
+}
+
+.inputBox {
+	margin: 20px 0;
+}
