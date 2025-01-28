@@ -1,6 +1,9 @@
-# **INTELLECT**
+<div align="center">
 
-Intellect is a full stack website created and developed by Addrita Biswas for Congressional App Challenge 2024. Placed 3rd place in district.
+# **INTELLECT**
+</div>
+
+Intellect is a college path and organizer website created for high school students. Features include a checklist that provides tips on what to accomplish/aim for each year in high school, resources for internships and learning, and allows users to create their own profile and allows organizer boxes.
 
 <div align="center">
     <img width="200" src="lizard.png" alt="Logo">
